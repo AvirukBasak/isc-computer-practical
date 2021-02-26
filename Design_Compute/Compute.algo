@@ -1,0 +1,32 @@
+class Compute:
+STEP 1: Start
+STEP 2: Inherit class Design
+STEP 3: Create global double area
+contructor Compute( String code, double len ):
+	STEP 1: Start
+	STEP 2: Invoke super class contructor as super( code, len )
+	STEP 3: Set global area to 0.0
+	STEP 4: End contructor
+function void calculate():
+	STEP 1: Start
+	STEP 2: If code equals ( ignore case ) "C":
+			Set area to π * Square( len )
+	STEP 3: Else if code equals ( ignore case ) "S":
+         	Set area to Square( len )
+	STEP 4: Else if code equals ( ignore case ) "T":
+         	Set area to 0.25 * squareRoot( 3 ) * Square( len )
+	STEP 5: End function
+function void show():
+	STEP 1: Start
+	STEP 2: Invoke super class function show() as super.show()
+	STEP 3: Print area
+	STEP 4: End function
+function main():
+	STEP 1: Start
+	STEP 2: Create String code and double len
+	STEP 3: Take input of code and len
+	STEP 4: Create Compute object c while passing parameters code and len using contructor
+	STEP 5: Invoke c.calculate()
+	STEP 6: Invoke c.show()
+	STEP 7: End function
+STEP 4: End

@@ -1,0 +1,26 @@
+class Theatre:
+STEP 1: Start
+function main():
+	STEP  1: Input hall capacity in cap
+	STEP  2: Create Ticket_Queue object tQ
+	STEP  3: Create Theatre_Stack object tS
+	STEP  4: Set int in and out to 0
+	STEP  5: Take input of choice
+	STEP  6: If choice is 1:
+			 Take input ticket code and
+			 Invoke tQ.pushViewer() and 
+			 push ticket code
+	STEP  7: If choice is 2:
+			 Set in to tQ.popViewer() and
+			 Invoke tS.pushBuyTicket()
+	STEP  8: If choice is 3:
+			 Invoke tQ.printQueue()
+	STEP  9: If choice is 4:
+			 Invoke tS.printStack()
+	STEP 10: If choice is 5:
+			 Invoke tS.popViewer()
+	STEP 11: If choice is 0:
+			 Quit
+	STEP 12: Goto STEP 5
+	STEP 13: End function
+STEP 2: End

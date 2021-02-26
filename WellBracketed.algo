@@ -1,0 +1,12 @@
+class WellBracketed:
+STEP 1: Start
+function main():
+	STEP 1: Take input of expression
+	STEP 2: Go through the expression. If opening
+			brace character found:
+			Push it to the stack
+	STEP 3: If closing brace character found, pop it from
+			stack
+	STEP 4: If stack is empty print 1 else 0
+	STEP 5: End function
+STEP 2: End

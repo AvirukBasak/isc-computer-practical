@@ -1,0 +1,18 @@
+class CartonSizes:
+STEP 1: Start
+function main():
+	STEP  1: Take input of total boxes in int boxes
+	STEP  2: Create int cartons, capacity, totalCartons
+	STEP  3: If boxes is 0:
+			 Goto STEP 10
+	STEP  4: If boxes greater or equal to capacity:
+			 Goto STEP 7
+	STEP  5: Else if boxes less than 6:
+			 Increase totalCartons by 1 and set boxes to 0
+	STEP  6: Else:
+			 Set capacity to capacity / 2
+	STEP  7: Set cartons to boxes / capacity
+	STEP  8: Increase totalCartons by cartons
+	STEP  9: Set boxes to boxes mod capacity
+	STEP 10: End function
+STEP 2: End

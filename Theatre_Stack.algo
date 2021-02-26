@@ -1,0 +1,37 @@
+class Theatre_Stack:
+STEP 1: Create int viewer_code[]
+STEP 2: Create int Max_size
+STEP 3: int first
+STEP 4: int last
+STEP 5: int out
+constructor Theatre_Stack(int size):
+	STEP 1: Start
+	STEP 2: Set Max_size to size
+	STEP 3: Set last to -1 and out to 0
+	STEP 4: Initialise viewer_code
+	STEP 5: End constructor
+function void pushBuyTicket(int viewer_code):
+	STEP 1: Start
+	STEP 2: If stack is not full:
+			Increase last by 1 and assign viewer_code 
+			to last position of array
+	STEP 3: Else:
+			Print stack overflow message
+	STEP 4: End function
+function int popViewer():
+	STEP 1: Start
+	STEP 2: If stack isn't empty:
+			Set out to last of viewer_code array and 
+			decrease last by 1
+	STEP 3: Else:
+			Print array underflow message
+	STEP 4: Return out
+	STEP 5: End function
+function void printStack():
+	STEP 1: Start
+	STEP 2: If stack isn't empty:
+			Print array
+	STEP 3: Else:
+			Print underflow message
+	STEP 4: End function
+STEP 6: End

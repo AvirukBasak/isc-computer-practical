@@ -1,0 +1,28 @@
+class Triples:
+STEP 1: Start
+function int countTripleRecursively( String str ):
+	STEP 1: Start
+	STEP 2: If length of str less than 3:
+			Return 0
+	STEP 3: Else If 0th, 1st and 2nd char of str are equal:
+			Return 1 + countTripleNonRecursively( part of str from 1th index )
+	STEP 4: Else:
+			Return countTripleNonRecursively( part of str from 1th index )
+	STEP 5: End function
+function int countTripleNonRecursively( String str ):
+	STEP 1: Start
+	STEP 2: Set int count to 0
+	STEP 3: If length of str is over 3:
+			If 0th, 1st and 2nd char of str are equal:
+			Increase count
+	STEP 4: Set str to part of str from 1th index
+	STEP 5: Goto STEP 3
+	STEP 6: Return count
+	STEP 7: End function
+function main():
+	STEP 1: Input a string in str
+	STEP 2: Invoke countTripleRecursively( str )
+	STEP 3: Invoke countTripleNonRecursively( str )
+	STEP 4: Print returned values
+	STEP 5: End function
+STEP 2: End

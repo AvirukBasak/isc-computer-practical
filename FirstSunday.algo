@@ -1,0 +1,40 @@
+class FirstSunday:
+STEP 1: Start
+STEP 2: Create global int year
+function String nextDay( String today ):
+	STEP  1: Set String[] days to{
+		 "Sunday", 
+		 "Monaday", 
+		 "Tuesday", 
+		 "Wednessday", 
+		 "Thursday", 
+		 "Friday", 
+		 "Saturday"
+	}
+	STEP  2: Set int index to 0
+	STEP  3: Set i to 0
+	STEP  4: If ith position of days equals to today:
+			 Set index to i and Goto STEP 7
+	STEP  5: Increase i by 1
+	STEP  6: If i is less than length of days:
+			 Goto STEP 4
+	STEP  7: Return next day using value of index
+	STEP  8: End function
+function main():
+	STEP  1: Sart
+	STEP  2: Take input of year in year
+	STEP  3: Take input of 1st day of year in day
+	STEP  4: If day equals Sunday and date is 1:
+			 Print this month
+	STEP  5: Else if date equals 1:
+			 Increase date by 28, then increase day by 28
+			 and Goto STEP 4
+	STEP  6: Set day to the next day
+	STEP  7: Increase date by 1
+	STEP  8: If date is less than last month date:
+			 Goto STEP 4
+	STEP  9: Set date to 1
+	STEP 10: Increase month by 1
+	STEP 11: Goto STEP 4
+	STEP 12: End function
+STEP 3: End

@@ -1,0 +1,31 @@
+class D3Point:
+STEP 1: Start
+STEP 2: Inherit class D2Point
+STEP 3: Create global double z
+constructor D3Point():
+	STEP  1: Start
+	STEP  2: Set z to 0
+	STEP  3: End constructor
+contructor D3Point( double nz ):
+	STEP  1: Start
+	STEP  2: Set z to nz
+	STEP  3: End constructor
+function double distance( D3Point b ):
+	STEP  1: Start
+	STEP  2: Calculate squareRoot( Square( x - b.x ) + Square( y - b.y ) + Square( x - b.x ) + Square( z - b.z ) )
+	STEP  3: Return the calculated value
+	STEP  4: End function
+function main():
+	STEP  1: Create double x, y and z
+	STEP  2: Take input of first coordinate point in x, y and z
+	STEP  3: Create D3Point object d3piont1 while passing z using constructor
+	STEP  4: Set d3piont1.x to x
+	STEP  5: Set d3piont1.y to y
+	STEP  6: Take input of second coordinate point in x, y and z
+	STEP  7: Create D3Poin object d3piont2 while passing z using constructor
+	STEP  8: Set d3piont2.x to x
+	STEP  9: Set d3piont2.y to y
+	STEP 10: Calculate distance b/w the to points using d3point1.distance( d3piont2 )
+	STEP 11: Print the result calculated
+	STEP 12: End function
+STEP 4: End

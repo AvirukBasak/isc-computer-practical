@@ -1,0 +1,54 @@
+class AnyBade2Base:
+STEP 1: Start
+
+function String fromDecimal( final int number, int baseOutput, boolean print ):
+	STEP  1: Start
+	STEP  2: Set int num to number
+	STEP  3: Set String result to ""
+	STEP  4: If num is not 0:
+			 Goto STEP 6
+	STEP  5: Else:
+			 Goto STEP 9
+	STEP  6: Set result to remainder of number by baseOutput and add String result after the remainder
+	STEP  7: Set num to quotient of num by baseOutput
+	STEP  8: Goto STEP 4
+	STEP  9: Return String result
+	STEP 10: End function
+
+function int toDecimal( String number, int baseInput, boolean print ):
+	STEP  1: Start
+	STEP  2: Set int result to 0
+	STEP  3: Set int digit to 0
+	STEP  4: Set i to length of number - 1
+	STEP  5: If i is greater or equal to 0:
+			 Goto STEP 6
+	STEP  6: Else:
+			 Goto STEP 11
+	STEP  7: Set digit to the ith value of the number. If it's a hex 
+			 letter, convert it to number by explicit integer cast of 
+			 the value 55 less than ith character of number.
+	STEP  8: Set result to sum of result and product of digit by baseInput
+			 powered to i + 1 less than length of number
+	STEP  9: Decrease" i by 1
+	STEP 10: Goto STEP 5
+	STEP 11: Return result
+	STEP 12: End function
+
+function main():
+	STEP  1: Start
+	STEP  2: Input input base in baseInput
+	STEP  3: Input number in number
+	STEP  4: Input output base in baseOutput
+	STEP  5: If baseInput is equal to baseOutput:
+			 Goto STEP 10
+	STEP  6: Else if baseInput is 10:
+			 Invoke fromDecimal() and pass baseOutput and number
+	STEP  7: Else if baseOutput is 10:
+			 Invoke toDecimal() and pass baseInput and number
+	STEP  8: Else:
+			 Convert input to decimal and convert returned value to 
+			 baseOutput using a nesting of toDecimal() and fromDecimal()
+	STEP  9: Print returned value
+	STEP 10: End function
+	
+STEP 2: End

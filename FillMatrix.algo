@@ -1,0 +1,36 @@
+class FillMatrix:
+STEP 1: Start
+function int noOf1s( int[][] matrix, int column ):
+	STEP 1: Start
+	STEP 2: Create int noOf1s and set it to 0
+	STEP 3: Set int i to 0
+	STEP 4: If i by column index of matrix is 1:
+			Increase noOf1s by 1
+	STEP 5: Increase i by 1
+	STEP 6: If i is less than length of matrix:
+			Goto STEP 4
+	STEP 7: Return noOf1s
+	STEP 8: End function
+function main():
+	STEP  1: Set String binary to ""
+	STEP  2: Set int decimal to 0
+	STEP  3: Set int M to integer parse of input
+	STEP  4: Create int[][] matrix
+	STEP  5: Set int i to 0
+	STEP  6: Set decimal to int cast of Math.random() * 512
+	STEP  7: If length of binary is 8:
+			 Goto STEP 11
+	STEP  8: Set binary to decimal % 2 + binary
+	STEP  9: Divide decimal by 2
+	STEP 10: Goto STEP 7
+	STEP 11: Set int j to 0
+	STEP 12: Set i by jth index of matrix to jth value of binary
+	STEP 13: Increase j by 1
+	STEP 14: If j is less than length of 0th matrix index:
+			 Goto STEP 12
+	STEP 15: Set binary to ""
+	STEP 16: If i is less than length of matrix:
+			 Goto STEP 6
+	STEP 17: Find the column with most 1s
+	STEP 18: End function
+STEP 2: End

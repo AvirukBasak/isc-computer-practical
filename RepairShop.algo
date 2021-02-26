@@ -1,0 +1,19 @@
+class RepairShop:
+STEP 1: Start
+STEP 2: Create Queue B, S, M
+STEP 3: Use default constructor to initialise the queues
+function main():
+	STEP  1: Start
+	STEP  2: Set char issue to blank
+	STEP  5: Set String csCode to blank
+	STEP  6: Use menu drive to take input
+	STEP  7: If input is 1:
+			Take input of issue and push it to respective queue
+	STEP  8: If input is 2:
+			Pop the queue in required manner
+	STEP  9: If input is 3:
+			Print customers
+	STEP 10: If input is 0:
+			Quit
+	STEP 11: End function
+STEP 4: End

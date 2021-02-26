@@ -1,0 +1,31 @@
+class Rank:
+STEP 1: Start
+STEP 2: Create global int index
+constructor Rank():
+	STEP 1: Start
+	STEP 2: Invoke super class constructor as super()
+			NOTE: It is not nescessary to have super() statement in 
+			newer JDK versions as the compiler does that automatically.
+	STEP 3: Set index to 0
+function void highest():
+	STEP 1: Start
+	STEP 2: Set i to 0
+	STEP 3: If ith position of rnk is less than index position of rnk:
+			Set index to i
+	STEP 4: Increase i by 1
+	STEP 5: If i is less than length of array rnk:
+			Goto STEP 3
+	STEP 6: End function
+function display():
+	STEP 1: Start
+	STEP 2: Invoke super class display() as super.display()
+	STEP 3: Display name of highest ranker
+	STEP 4: End function
+function main():
+	STEP 1: Start
+	STEP 2: Create Rank object rnk
+	STEP 3: Invoke rnk.readvalues()
+	STEP 4: Invoke rnk.highest()
+	STEP 5: Invoke rnk.highest.display()
+	STEP 6: End function
+STEP 3: End

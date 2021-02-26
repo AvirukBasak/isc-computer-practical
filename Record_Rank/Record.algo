@@ -1,0 +1,26 @@
+class Record:
+STEP 1: Start
+STEP 2: Create global String[] name
+STEP 3: Create global int[] rnk
+constructor Record():
+	STEP 1: Start
+	STEP 2: Initialise array name with size 5
+	STEP 3: Initialise array rnk with size 5
+	STEP 4: End constructor
+function void readvalues():
+	STEP 1: Start
+	STEP 2: Set i to 0
+	STEP 3: Take input of name at ith index of array name
+	STEP 4: Take input of rank at ith index of array rnk
+	STEP 5: If any exception at STEP 3 or STEP 4:
+			Decrease i by 1
+	STEP 6: Increase i by 1
+	STEP 7: If i is less than length of array name:
+			Goto STEP 3
+	STEP 8: End function
+function void display():
+	STEP 1: Start
+	STEP 2: Display the content of arrays name and 
+			rank in a tabular form
+	STEP 3: End function
+STEP 4: End

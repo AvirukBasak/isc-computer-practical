@@ -1,0 +1,14 @@
+class Design:
+STEP  1: Start
+STEP  2: Create global String code
+STEP  3: Create global double len
+contructor Design( String code, double len ):
+	STEP 1: Start
+	STEP 2: Set global code to parameter code
+	STEP 3: Set global len to parameter len
+	STEP 4: End contructor
+function void show():
+	STEP 1: Start
+	STEP 2: Print code and len
+	STEP 3: End function
+STEP 4: End

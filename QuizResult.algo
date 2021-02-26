@@ -1,0 +1,23 @@
+class QuizResult:
+STEP 1: Start
+STEP 2: Create String[] key
+STEP 3: Create String[][] answers
+contructor QuizResult( int participants ):
+	STEP 1: Start
+	STEP 2: Set N to participants
+	STEP 3: Initialise the arrays
+	STEP 4: End contructor
+function int Mark( int participant ):
+	STEP 1: Set int marks to 0
+	STEP 2: Set int i to 0
+	STEP 3: If i less than 5 and ith key is equal 
+			to participant bt ith answer:
+			Increase marks and i by 1, then goto
+			STEP 3
+	STEP 4: End function
+function main():
+	STEP 1: Take keys input in keys array
+	STEP 2: Take answers input
+	STEP 3: Print the result by invoking Mark()
+	STEP 4: End function
+STEP 4: End

@@ -1,0 +1,25 @@
+class EndWithX:
+STEP 1: Start
+STEP 2: Create int index
+constrtuctor EndWithX( int length ):
+	STEP 1: Set index to length
+	STEP 2: End constrtuctor
+function String endX( String str ):
+	STEP 1: Start
+	STEP 2: If index equals length of str:
+			Decrease index by 1
+	STEP 3: If index is -1:
+			Do nothing
+	STEP 4: Else if character of str at index is 'x':
+			Exclude x from String, put it at the end, then decrease
+			index by 1, then pass str to endx()
+	STEP 5: Else:
+			Decrease index by 1 and then pass str to endx()
+	STEP 6: Return str
+	STEP 7: End function
+function main():
+	STEP 1: Start
+	STEP 2: Take input and pass it to endX() using 
+			an EndWithX type object
+	STEP 3: End function
+STEP 3: End

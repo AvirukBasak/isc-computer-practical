@@ -1,0 +1,24 @@
+class IstOccurance:
+STEP 1: Start
+function int nextIndex( String[] array, String element, int from ):
+	STEP 1: Start
+	STEP 2: If array contains element:
+			Return it's index
+	STEP 3: Return -1
+	STEP 4: End function
+function main():
+	STEP 1: Take input of array size in size
+	STEP 2: Create String[] array and removed of size size
+	STEP 3: Take input in array
+	STEP 4: Set i to 0
+	STEP 5: If nextIndex() of array for ith array element 
+			from i + 1 is not -1 and removed doesn't contain 
+			the ith element:
+			Add this element to removed and delete it from
+			the array
+	STEP 6: Increase i by 1
+	STEP 7: If i is less than size:
+			Goto STEP 5
+	STEP 8: Print the array
+	STEP 9: End function
+STEP 2: End

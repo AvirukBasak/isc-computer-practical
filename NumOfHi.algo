@@ -1,0 +1,15 @@
+class NumOfHi:
+STEP 1: Start
+function int countHi( String str ):
+	STEP 1: Start
+	STEP 2: If indexOf( "hi" ) for str is less than 0:
+			Return 0
+	STEP 3: Else:
+			Return 1 + countHi( str.substring( str.indexOf( "hi" ) + 2 ) )
+	STEP 4: End function
+function main():
+	STEP 1: Start
+	STEP 2: Take input and invoke countHi()
+	STEP 3: Print result
+	STEP 4: End function
+STEP 2: End

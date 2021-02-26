@@ -1,0 +1,40 @@
+class Ticket_Queue:
+STEP  1: Start
+STEP  2: Create int Cons_code[]
+STEP  3: Create int Max_size
+STEP  4: Create int front, rear
+constructor Ticket_Queue(int size):
+	STEP  1: Start
+	STEP  2: Set Max_size to size
+	STEP  3: Set rear to -1 and front to 0
+	STEP  4: Initialise viewer_code
+	STEP  5: End constructor
+function void pushViewer(int viewer_code):
+	STEP  1: Start
+	STEP  2: If queue is not full:
+			 Increase rear by 1 and assign viewer_code 
+			 to rear position of array
+	STEP  3: Else:
+			 Print queue overflow message
+	STEP  4: End function
+function int popViewer():
+	STEP  1: Start
+	STEP  2: Set out to 0
+	STEP  3: If queue is empty:
+			 Print queue underflow message and end 
+			 function
+	STEP  4: Set out to front index of Cons_code
+    STEP  5: Set front of Cons_code to 0;
+    STEP  6: Increase front by 1
+    STEP  7: If front not equals rear:
+    		 Return out and end function
+	STEP  8: Set out to front of Code_cons
+	STEP  9: Set fron of Code_cons to 0
+	STEP 10: Set font to 0 and rear to -1
+	STEP 11: Return out and end function
+function void printQueue():
+	STEP  1: If queue is empty:
+			 Print queue underflow message and end function
+	STEP  2: Print queue
+	STEP  3: End function
+STEP 5: End

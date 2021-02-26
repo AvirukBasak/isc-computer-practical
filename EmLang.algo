@@ -1,0 +1,121 @@
+class EmLang:
+STEP 1: Start
+STEP 2: Create global double eval
+function void display( String[] exp ):
+	STEP  1: Start
+	STEP  2: Print the array exp
+	STEP  3: End function
+function int nextElement( String[] array, String element, int from, boolean searchOnly ):
+	STEP  1: Start
+	STEP  2: Set openingBraceCount to 0. This count rises as more and more nested braces
+			 are opened
+	STEP  3: Set i to 0
+	STEP  4: If ith index of array equals to "(" AND searchOnly is false:
+			 Increase openingBraceCount bt 1
+	STEP  5: Else if ith index of array equals to ")" AND openingBraceCount is greater
+			 than 0:
+			 Decrease openingBraceCount by 1
+	STEP  6: Else if ith index of array equals element AND openingBraceCount is equal
+			 to 0:
+			 Return i
+	STEP  7: Increase i bt 1
+	STEP  8: If i is less than length of array:
+			 Goto STEP 4
+	STEP  9: End function
+function String[] subArray( String[] array, int from, int to ):
+	STEP  1: Start
+	STEP  2: Return a part of the array b/w from and to
+			 including index from and excluding index to
+	STEP  3: End function
+function String[] concatArrays( String[] A, String eval, String[] B ):
+	STEP  1: Start
+	STEP  2: Create an array output with size 1 greater than sum of sizes 
+			 of A and B
+	STEP  3: Copy A to first part of output
+	STEP  4: Set next index of output to eval
+	STEP  5: Copy B to remaining space of output
+	STEP  6: Return output
+	STEP  7: End function
+function Stack Symbols( String[] exp ):
+	STEP  1: Start
+	STEP  2: Create a Stack type object named Symbols
+	STEP  3: Check if exp conatins the symbol. If it doesn't, the function
+			 nextElement() will return -1
+	STEP  4: If it is contained, push the element to Symbols in BEDMAS order
+	STEP  5: End function
+function double calculate( String operator, double oprnd1, double oprnd2 ):
+	STEP  1: Start
+	STEP  2: Operate on oprnd1 and oprnd2 using operator
+	STEP  3: Return calculated value
+	STEP  4: End function
+function String[] evaluate( String[] exp, Stack Symbols, String operator ):
+	STEP  1: Start
+	STEP  2: Set i to 0
+	STEP  3: If ith index of exp equals to operator:
+			 Goto STEP 5 
+	STEP  4: Else:
+			 Goto STEP 9
+	STEP  5: Extract elements before and after the operator and pass them
+			 to function calculate() with the operator. Set global eval 
+			 to the value returned
+	STEP  6: Replace the operands and the operator b/w them in the array 
+			 exp with the value from eval
+	STEP  7: Set i to 0
+	STEP  8: Display the array exp as display( exp )
+	STEP  9: Increase i by 1
+	STEP 10: If i is less than length of exp:
+			 Goto STEP 3
+	STEP 11: If value from peek() of Symbols is the operator:
+			 Pop the top of Symbols as Symbols.pop()
+	STEP 12: Return exp
+	STEP 13: End function
+function double simplify( String[] exp ):
+	STEP  1: Start
+	STEP  2: Create Stack object Symbols
+	STEP  3: Set Symbols to Symbols( exp )
+	STEP  4: Craete double eval and set it to 0
+	STEP  5: Create int i and set it to 0
+	STEP  6: Create int next and set it to -1
+	STEP  7: If Stack Symbols isn't empty:
+			 Goto STEP 9
+	STEP  8: Else:
+			 Goto STEP 28
+	STEP  9: Switch to case from Symbols.peek()
+	STEP 10: Case "(":
+	STEP 11: Set i to 0
+	STEP 12: If ith index of exp equals to "(":
+			 Goto STEP 14
+	STEP 13: Else:
+			 Goto STEP 20
+	STEP 14: Set next to the index returned by nextElement()
+			 through which we search for the ")"
+	STEP 15: If next not equals -1:
+			 Goto STEP 17
+	STEP 16: Else:
+			 Goto STEP 22
+	STEP 17: Pass the part b/w the two braces using subarray
+			 to function simplify()
+	STEP 18: Set eval to returned value
+	STEP 19: Replace the part of exp passed with value of eval
+	STEP 20: Increase i by 1
+	STEP 21: Goto STEP 12
+	STEP 22: If value from peek() of Symbols is "(":
+			 Pop the top of Symbols as Symbols.pop()
+The general form of the rest of the cases ie for the
+operators EDMAS are from STEP 23 to 26:
+	STEP 23: Case operator:
+	STEP 24: Pass exp, Stack Symbols and operator to evaluate()
+	STEP 25: Set exp to returned value
+	STEP 26: Set eval to global eval
+
+	STEP 27: Goto STEP 7
+	STEP 28: Return eval
+	STEP 29: End function
+function main():
+	STEP  1: Start
+	STEP  2: Create new EmLang object em
+	STEP  3: Take input of expression
+	STEP  4: Pass the expression by invoking em.simplify()
+	STEP  5: Print the result
+	STEP  6: End function
+STEP 3:End

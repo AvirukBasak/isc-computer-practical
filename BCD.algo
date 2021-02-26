@@ -1,0 +1,44 @@
+class BCD:
+STEP 1: Start
+STEP 2: Create double n
+function void input():
+	STEP  1: Take input in global n
+	STEP  2: End function
+function void display():
+	STEP  1: Display value returned by method convert
+	STEP  2: End function
+function String convert():
+	STEP  1: Create int d, char c, String binary, String result
+	STEP  2: Set String n to global double n
+	STEP  3: Set int i to 0
+	STEP  4: Set c to character at ith index of local n
+	STEP  5: If c is not a digit:
+			 Goto STEP 18
+	STEP  6: Set d to ACSII of 0 less than c
+	STEP  7: If d is equal to 0:
+			 Goto STEP 9
+	STEP  8: Set binary to String of d mod 2 and append binary to itself
+	STEP  9: Goto STEP 6
+	STEP 10: If length of binary is not less than 4:
+			 Goto STEP 14
+	STEP 11: Set int j to 0
+	STEP 12: If j is less or equal to 4 - length of binary:
+			 Set binary to 0 + binary
+	STEP 13: Increase j by 1
+	STEP 14: Goto STEP 11
+	STEP 15: Set result to result + binary + ""
+	STEP 16: Set binary to ""
+	STEP 17: Goto STEP 19
+	STEP 18: Set result to result + c + " "
+	STEP 19: Increase i by 1
+	STEP 20: If i less than length of n:
+			 Goto STEP 4
+	STEP 21: Return result
+	STEP 22: End function
+function main():
+	STEP  1: Create BCD object
+	STEP  2: Invoke BCD.input()
+	STEP  3: Invoke BCD.convert()
+	STEP  4: Invoke BCD.display()
+	STEP  5: End function
+STEP 3: End

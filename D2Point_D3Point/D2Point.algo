@@ -1,0 +1,18 @@
+class D2Point:
+STEP 1: Start
+STEP 2: Create global double x and y
+constructor D2Point():
+	STEP 1: Start
+	STEP 2: Set x and y to 0
+	STEP 3: End constructor
+contructor D2Point( double nx, double ny ):
+	STEP 1: Start
+	STEP 2: Set x to nx
+	STEP 3: Set y to ny
+	STEP 4: End constructor
+function double distance2d( D2Point b ):
+	STEP 1: Start
+	STEP 2: Calculate squareRoot( Square( x - b.x ) + Square( y - b.y ) + Square( x - b.x ) )
+	STEP 3: Return the calculated value
+	STEP 4: End function
+STEP 3: End

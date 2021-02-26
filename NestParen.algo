@@ -1,0 +1,17 @@
+class NestParen:
+STEP 1: Start
+function main():
+	STEP 1: Start
+	STEP 2: Take input of expression in exp
+	STEP 3: Set int trackBraces to 0
+	STEP 4: Set int index to 0
+	STEP 5: Set c to index character of exp
+	STEP 6: If c is '(':
+			Increase trackBraces by 1
+			Else if c is ')':
+			Decrease trackBraces by 1
+	STEP 7: Increase index by 1
+	STEP 8: If index is less than length of exp:
+			Goto STEP 5
+	STEP 9: End function
+STEP 2: End

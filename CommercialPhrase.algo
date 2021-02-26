@@ -1,0 +1,34 @@
+class CommercialPhrase:
+STEP 1: Start
+STEP 2: Create global Strin[] array and assing it to:
+		{
+			"",
+			"",
+			"ABC",
+			"DEF",
+			"GHI",
+			"JKL",
+			"MNO",
+			"PQRS",
+			"TUV",
+			"WXYZ"
+		}
+function main():
+	STEP  1: Input phrase in String s
+	STEP  2: Create int j and set it to 2
+	STEP  3: Create char c and set it empty
+	STEP  4: Set int i to 0
+	STEP  5: If i is less than length of s:
+			 Goto STEP 7
+	STEP  6: Else:
+			 Goto STEP 
+	STEP  7: Set c to ith character of s
+	STEP  8: If j is less than length of codes:
+			 If index of c at element of jth element of codes is -1:
+			 Increse j and goto STEP 8
+	STEP  9: Else:
+			 Set s to s.substring( 0, i ) + j + s.substring( i + 1 )
+	STEP 10: Increase i by 1
+	STEP 11: Goto STEP 5
+	STEP 12: End function
+STEP 3: End
