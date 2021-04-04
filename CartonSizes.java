@@ -73,11 +73,10 @@ public class CartonSizes {
  * 
  * CAP	CARTON	BOXES
  * 
- * 48 	15 		720
- * 6 		1 		6
- * 6 		1		3
+ * 48   15      720
+ * 6    1       6
+ * 6    1       3
  * 
  * Total cartons = 17
- * 
  */
 
