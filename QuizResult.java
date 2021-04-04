@@ -67,11 +67,11 @@ public class QuizResult {
  * ENTER KEYS
  * -------------------------------
  * 
- * QUESTION 01: a
- * QUESTION 11: b
- * QUESTION 21: a
- * QUESTION 31: b
- * QUESTION 41: c
+ * QUESTION 1: a
+ * QUESTION 2: b
+ * QUESTION 3: a
+ * QUESTION 4: b
+ * QUESTION 5: c
  * 
  * ENTER ANSWERS
  * -------------------------------------------
@@ -105,7 +105,7 @@ public class QuizResult {
  * 
  * 
  * ANSWER KEY: A B A B C
- * QUESTION 	1	2	3	4	5	MARKS
+ * QUESTION 	  1	2	3	4	5	MARKS
  * PARTICIPANT 1: A	B	A	B	C	5
  * PARTICIPANT 2: A	C	B	D	A	1
  * PARTICIPANT 3: B	A	D	C	A	0
