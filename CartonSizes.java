@@ -15,10 +15,10 @@
  * 
  * OUTPUT:
  * 
- * CAP 	CARTONS 	BOXES
+ * CAP 	CARTONS    BOXES
  * 
- * 48 	15 		720
- * 6 		1 		6
+ * 48   15         720
+ * 6    1          6
  * 
  * Total cartons = 16
  */
