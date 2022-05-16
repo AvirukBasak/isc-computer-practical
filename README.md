@@ -1,5 +1,5 @@
-# Isc Computer Practical
-[Download ZIP](https://github.com/OogleGlu/ISC-Computer-Practical/archive/main.zip)
+# ISC Computer Practical
+[Download ZIP](https://github.com/AvirukBasak/isc-computer-practical/archive/main.zip)
 
 ## Index of Classes
  - [AnyBase2Base](https://github.com/OogleGlu/ISC-Computer-Practical/blob/main/AnyBase2Base.java)
