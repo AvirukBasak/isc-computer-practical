@@ -1,4 +1,4 @@
-# **ISC COMPUTER PRACTICAL**
+# Isc Computer Practical
 [Download ZIP](https://github.com/OogleGlu/ISC-Computer-Practical/archive/main.zip)
 
 ## Index of Classes
